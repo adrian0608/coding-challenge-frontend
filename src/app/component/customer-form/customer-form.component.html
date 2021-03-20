@@ -1,0 +1,28 @@
+<h2>Customer Form</h2>
+<div>
+  <form [formGroup]="customerForm" (ngSubmit)="onSave()">
+    <span class="p-float-label">
+      <input formControlName="firstName" id="firstName" type="text" pInputText>
+      <label for="firstName">First Name</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input formControlName="middleName" id="middleName" type="text" pInputText>
+      <label for="middleName">Middle Name</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input formControlName="lastName" id="lastName" type="text" pInputText>
+      <label for="lastName">Last Name</label>
+    </span>
+    <br>
+    <span class="p-float-label">
+      <input formControlName="email" id="email" type="text" pInputText>
+      <label for="email">Email</label>
+    </span>
+    <br><br>
+    <p-button (click)="onSave()" label="Save" ></p-button>
+    &nbsp;&nbsp;
+    <p-button (click)="onBack()" label="Back" ></p-button>
+  </form>
+</div>
